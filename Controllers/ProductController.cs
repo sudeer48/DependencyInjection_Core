@@ -14,6 +14,7 @@ namespace DependencyInjection_Core.Controllers
         {
             _productRepository = new ProductRepository();
         }
+
         [HttpPost("")]
         public IActionResult AddProduct([FromBody] ProductModel product)
         {
